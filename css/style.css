@@ -1,7 +1,22 @@
-
 body {
    overflow-x: hidden;
    background-image: linear-gradient(90deg,#f9ed69,#f08a5d,#b83b5e);
+}
+
+* {
+   padding: 0;
+   margin: 0;
+}
+
+.jumbotron {
+   background-image: url('/img/4tea.jpg');
+   height: 91vh;
+   width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   border-radius: 0px!important;
+   justify-items: center;
 }
 
 /*=== NAVIGATION ===*/
@@ -115,11 +130,11 @@ nav ul li a:hover::after {
 }
 
 .fixed-background {
-   padding: 9rem;
+   padding: 8rem 0;
    box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
  }
  .fixed {
-   background-image: url('/img/no-bg.png');
+   background-image: url('/img/no-bg-2.png');
    position: fixed;
  }
 
@@ -161,11 +176,11 @@ nav ul li a:hover::after {
 
 /*Footer start*/
 footer {
-   background-image: linear-gradient(90deg,#b83b5e,#6a2c70);
+   background-image: linear-gradient(90deg,#f9ed69,#f08a5d,#b83b5e);
    position: relative;
    text-align: center;
    justify-content: center;
-   height: 300px;
+   height: 320px;
 }
 
 footer .container {
@@ -186,16 +201,21 @@ footer .container a {
    color: white;
 }
 
+footer .container h1,
+footer .container h3 {
+   text-transform: uppercase;
+}
+
 footer .container p,
 footer .container span {
    font-size: 1rem;
 }
 
 footer .container .socials span {
-   padding-top: 1rem;
+   padding: 1rem 0;
    margin: 4px;
    display: inline-block;
-   font-size: 2rem;
+   font-size: 1.5rem;
    text-align: center;
    border-radius: 1px;
    transition: all .3s;
@@ -214,7 +234,8 @@ footer .container .socials span i:hover {
 /*Footer end*/
 
 .socket {
-   background-image: linear-gradient(90deg,#b83b5e,#6a2c70);
+   
+   background-color: #6a2c70;
    text-align: center;
    justify-content: center;
    padding: 1rem;
@@ -227,12 +248,8 @@ footer .container .socials span i:hover {
 /*Media queries*/
 
 /*Extra small devices (portrait phones, less than 576px)*/
-@media (min-width: 340px) {
-   .fixed-background {
-      padding: 6rem;
-      background-size: contain;
-    }
-     
+@media (max-width: 340px) {
+
 }
 /*No media query for `xs` since this is the default in Bootstrap*/
 /*Small (-sm-) devices (landscape phones, 576px and up)*/
