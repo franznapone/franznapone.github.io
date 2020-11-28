@@ -42,7 +42,7 @@ body {
    color: white;
 }
  
- .nav-link {
+.nav-link {
    color: white !important;
    font-weight: 400;
    letter-spacing: .12rem;
@@ -120,7 +120,7 @@ nav ul li a:hover::after {
    transform: scaleX(1);
 }
 
- @keyframes slideIn {
+@keyframes slideIn {
    from{
 
    }
@@ -150,7 +150,7 @@ nav ul li a:hover::after {
    width: 100%;
    z-index: 1;
  }
- .fixed-wrap {
+.fixed-wrap {
    clip: rect(0, auto, auto, 0);
    position: absolute;
    top: 0;
@@ -159,7 +159,7 @@ nav ul li a:hover::after {
    height: 100%;
    z-index: -999 !important;
  }
- .fixed {
+.fixed {
    z-index: -999!important;
    display: block;
    top: 0;
@@ -178,6 +178,8 @@ nav ul li a:hover::after {
 footer {
    background-image: linear-gradient(90deg,#f9ed69,#f08a5d,#b83b5e);
    position: relative;
+   bottom: 0;
+   width: 100%;
    text-align: center;
    justify-content: center;
    height: 320px;
@@ -199,6 +201,11 @@ footer .container h3,
 footer .container p,
 footer .container a {
    color: white;
+}
+
+footer .container h1 {
+   text-align: center;
+   font-size: 2rem;
 }
 
 footer .container h1,
@@ -231,19 +238,16 @@ footer .container .socials span i:hover {
    transition: all .3s;
    opacity: .2;
 }
+
+/*Menu Page*/
+
+#orderHere {
+   text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, .35);;
+   color: white;
+   letter-spacing: 2px;
+}
+
 /*Footer end*/
-
-.socket {
-   
-   background-color: #6a2c70;
-   text-align: center;
-   justify-content: center;
-   padding: 1rem;
- }
-
- .socket a {
-    color: white;
- }
 
 /*Media queries*/
 
